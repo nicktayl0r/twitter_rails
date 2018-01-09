@@ -1,0 +1,12 @@
+<h1> BORN TO TWEET</h1>
+<h2> WORLD IS A HASHTAG</h2>
+<h2> Tag em all 1989</h2>
+<h2> I am @trash_man</h2>
+<h2> 410,757,864,530 UNUSED CHARACTERS</h2>
+<ul>
+<% @tweets.each do |tweet| %>
+    <li>
+        <%= link_to tweet.handle, tweets_path(tweet) %> - <%= tweet.content %> - <%= tweet.updated_at %>
+    </li>
+<% end %>
+</ul>
